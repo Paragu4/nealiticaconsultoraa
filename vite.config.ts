@@ -19,12 +19,10 @@ export default defineConfig({
     : {}),
 
   tanstackStart: {
-  server: { entry: "server" },
+    server: { entry: "server" },
 
-  router: {
-    basepath: isGitHubPages
-      ? "/nealiticaconsultoraa"
-      : "/",
+    router: {
+      basepath: "/",
+    },
   },
-},
 });
