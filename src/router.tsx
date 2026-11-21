@@ -22,10 +22,10 @@ export const getRouter = () => {
     defaultPreloadStaleTime: 0,
   });
 
-    if (typeof window !== "undefined") {
+     if (typeof window !== "undefined") {
     console.log("[DEBUG ROUTER STATE]", {
       basepath: router.options.basepath,
-      location: router.state.location.pathname,
+      pathname: router.state.location.pathname,
       matches: router.state.matches.map((match) => ({
         routeId: match.routeId,
         status: match.status,
