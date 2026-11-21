@@ -26,12 +26,12 @@ function NotFoundComponent() {
           La página que buscás no existe o se movió.
         </p>
         <div className="mt-6">
-          <Link
-            to="/"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            Volver al inicio
-          </Link>
+        <a
+  href="https://paragu4.github.io/nealiticaconsultoraa/"
+  className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+>
+  Volver al inicio
+</a>
         </div>
       </div>
     </div>
@@ -64,12 +64,12 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
           >
             Reintentar
           </button>
-          <a
-            href="/"
-            className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
-          >
-            Volver al inicio
-          </a>
+         <a
+  href="https://paragu4.github.io/nealiticaconsultoraa/"
+  className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
+>
+  Volver al inicio
+</a>
         </div>
       </div>
     </div>
