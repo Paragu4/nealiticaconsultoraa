@@ -32,6 +32,14 @@ export const getRouter = () => {
       })),
     });
   }
-  
+    router.subscribe("onResolved", () => {
+    console.log("[DEBUG ROUTER RESOLVED]", {
+      pathname: router.state.location.pathname,
+      matches: router.state.matches.map((match) => ({
+        routeId: match.routeId,
+        status: match.status,
+      })),
+    });
+  });
   return router;
 };
