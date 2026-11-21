@@ -18,19 +18,13 @@ export default defineConfig({
       }
     : {}),
 
-  tanstackStart: {
-    server: { entry: "server" },
+tanstackStart: {
+  server: { entry: "server" },
 
-    router: {
-      basepath: isGitHubPages
-        ? "/nealiticaconsultoraa"
-        : "/",
-    },
-
-    prerender: {
-      enabled: isGitHubPages,
-      crawlLinks: true,
-      failOnError: true,
-    },
+  router: {
+    basepath: isGitHubPages
+      ? "/nealiticaconsultoraa"
+      : "/",
   },
+},
 });
